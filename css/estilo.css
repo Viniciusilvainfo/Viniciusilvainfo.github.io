@@ -1,0 +1,302 @@
+body, html {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Início da barra de navegação (classes que ficam dentro da nav) */
+.navbar-color {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.img-logo {
+    height: 4em;
+    width: 4em;
+}
+
+.navbar-brand {
+    padding: 1em 0;
+    color:white;
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover{
+    color: #9bf0e1;
+    background: none;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    text-align: left;
+}
+
+.button {
+    background-color: white;
+    margin: 0.2em;
+}
+
+.divisor {
+    width: 0.1em;
+    height: 1em;
+    background: white;
+    margin: 0.8em;
+}
+/* Fim da barra de navegação */
+
+
+/* Início do conteúdo principal */
+h2 {
+    font-family: 'Galada',cursive;
+}
+
+.pesquisa {
+    padding: 0.8em;
+    border-radius: 1em;
+    font-size: 1.1em;
+}
+
+#parallax1 {
+    background-image: url('../imagens/foto-teste.jpg');
+}
+
+#parallax2 {
+    background-image: url('../imagens/foto-balao.jpg');
+}
+
+#parallax3 {
+    background-image: url('../imagens/foto-praia.jpg');
+}
+
+.parallax {
+    height: 100%;
+    background-attachment: fixed; /*usar scroll ou fixed */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.imagem-opacity {
+    opacity: 70%;
+
+
+}
+
+.box-contents {
+    /* background-color: rgba(0, 0, 0, 0.02); */
+    border-radius: 2em;
+    width: 25em;
+    height: 20em;
+    margin: 0 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border-radius: 2em;
+}
+
+.box a:hover {
+    background: none;
+    color: blue;
+}
+
+.centro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.decora-texto {
+    padding: 1em;
+}
+
+.form-search {
+    padding: 3em;
+    border-radius: 2em;
+}
+
+.imagetest {
+    padding: 1em;
+    float: left;
+}
+.align {
+    text-align: center;
+    vertical-align:middle;
+    padding: 1em;
+    color: #2F4F4F;
+    text-shadow: 0.5em 0.2em 0.9em white;
+    font-size: 2.5em;
+}
+
+.content {
+    width: 60%;
+    margin: 1em auto;
+    background-color: whitesmoke;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+.margin {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.spacing {
+    padding: 1em 0;
+}
+
+.button-pack {
+    width: 8em;
+    height: 4em;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.card-body {
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+}
+.card2 {
+    height: 30em;
+}
+
+/* Fim do conteúdo principal */
+
+
+/* Início do rodapé */
+.rodape {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    position: static;
+}
+/* Fim do rodapé */
+
+
+/* Início das media queries */
+@media (max-width: 768px) {
+    .divisor {
+        width: 1em;
+        height: 0.1em;
+        background: white;
+        margin: 1.1em 0.5em;
+    }
+
+    .button-pack {
+        width: 7em;
+        height: 4em;
+        padding: 0.5em;
+        margin: 0.2em;
+        font-size: 1em;
+    }
+
+    .active {
+        width: 100%;
+        background-color: transparent;
+    }
+    .box-contents {
+        width: 20em;
+        height: 18em;
+    }
+
+    .form-search {
+        padding: 2em;
+    }
+
+    #testediv {
+        display: none;
+    }
+
+    .form-search {
+        height: 12em;
+        width: 20em;
+        justify-content: center;
+    }
+
+}
+@media (max-height: 730px) {
+    .centro {
+        margin-top: 0em;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-brand {
+        padding: 1em 0;
+        color: white;
+        font-size: 1.15rem;
+    }
+
+    .img-logo {
+        height: 3.5em;
+        width: 3.5em;
+        display: block;
+        background-size: contain;
+        color: transparent;
+    }
+    .margin-navbar {
+        padding: 0;
+        margin-left: 0;
+    }
+    .content {
+        width: 70%;
+    }
+}
+/* Fim das media queries */
+
+
+/* estilos página formulário */
+.formulario {
+    padding: 5px;
+    margin: 40px;
+    background-color: white;
+    text-align: left;
+}
+
+.formulario>legend {
+    text-align: center;
+}
+
+div>button.borda {
+    border: 1px solid black;
+}
+
+.formulario2 {
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom:60px;
+}
+
+/* estilos página pacotes */
+
+.pacotes2 {
+    border: 1px solid red;
+}
